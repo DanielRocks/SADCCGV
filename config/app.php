@@ -252,7 +252,7 @@ return [
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
             'host' => 'br-cdbr-azure-south-a.cloudapp.net',
-            //'port' => 'nonstandard_port_number',
+            'port' => '1433',
             'username' => 'b9edee6d92b03c',
             'password' => '39d8b423',
             'database' => 'sadccgvAcNLGnymB',
