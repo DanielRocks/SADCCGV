@@ -1,26 +1,29 @@
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('Edit Opcao'), ['action' => 'edit', $opcao->IDopcao]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Opcao'), ['action' => 'delete', $opcao->IDopcao], ['confirm' => __('Are you sure you want to delete # {0}?', $opcao->IDopcao)]) ?> </li>
-        <li><?= $this->Html->link(__('List Opcao'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Opcao'), ['action' => 'add']) ?> </li>
-    </ul>
+<div class="opcaos view">
+<h2><?php echo __('Opcao'); ?></h2>
+	<dl>
+		<dt><?php echo __('IDopcao'); ?></dt>
+		<dd>
+			<?php echo h($opcao['Opcao']['IDopcao']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('IDpergunta'); ?></dt>
+		<dd>
+			<?php echo h($opcao['Opcao']['IDpergunta']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Opcao'); ?></dt>
+		<dd>
+			<?php echo h($opcao['Opcao']['opcao']); ?>
+			&nbsp;
+		</dd>
+	</dl>
 </div>
-<div class="opcao view large-10 medium-9 columns">
-    <h2><?= h($opcao->IDopcao) ?></h2>
-    <div class="row">
-        <div class="large-2 columns numbers end">
-            <h6 class="subheader"><?= __('IDopcao') ?></h6>
-            <p><?= $this->Number->format($opcao->IDopcao) ?></p>
-            <h6 class="subheader"><?= __('IDpergunta') ?></h6>
-            <p><?= $this->Number->format($opcao->IDpergunta) ?></p>
-        </div>
-    </div>
-    <div class="row texts">
-        <div class="columns large-9">
-            <h6 class="subheader"><?= __('Opcao') ?></h6>
-            <?= $this->Text->autoParagraph(h($opcao->opcao)) ?>
-        </div>
-    </div>
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+		<li><?php echo $this->Html->link(__('Edit Opcao'), array('action' => 'edit', $opcao['Opcao']['IDopcao'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete Opcao'), array('action' => 'delete', $opcao['Opcao']['IDopcao']), array(), __('Are you sure you want to delete # %s?', $opcao['Opcao']['IDopcao'])); ?> </li>
+		<li><?php echo $this->Html->link(__('List Opcaos'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Opcao'), array('action' => 'add')); ?> </li>
+	</ul>
 </div>

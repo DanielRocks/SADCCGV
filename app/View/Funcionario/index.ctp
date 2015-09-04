@@ -1,47 +1,48 @@
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('New Funcionario'), ['action' => 'add']) ?></li>
-    </ul>
+<div class="funcionarios index">
+	<h2><?php echo __('Funcionarios'); ?></h2>
+	<table cellpadding="0" cellspacing="0">
+	<tr>
+			<th><?php echo $this->Paginator->sort('IDfuncionario'); ?></th>
+			<th><?php echo $this->Paginator->sort('nome'); ?></th>
+			<th><?php echo $this->Paginator->sort('login'); ?></th>
+			<th><?php echo $this->Paginator->sort('senha'); ?></th>
+			<th><?php echo $this->Paginator->sort('responsavel'); ?></th>
+			<th><?php echo $this->Paginator->sort('departamento'); ?></th>
+			<th class="actions"><?php echo __('Actions'); ?></th>
+	</tr>
+	<?php foreach ($funcionarios as $funcionario): ?>
+	<tr>
+		<td><?php echo h($funcionario['Funcionario']['IDfuncionario']); ?>&nbsp;</td>
+		<td><?php echo h($funcionario['Funcionario']['nome']); ?>&nbsp;</td>
+		<td><?php echo h($funcionario['Funcionario']['login']); ?>&nbsp;</td>
+		<td><?php echo h($funcionario['Funcionario']['senha']); ?>&nbsp;</td>
+		<td><?php echo h($funcionario['Funcionario']['responsavel']); ?>&nbsp;</td>
+		<td><?php echo h($funcionario['Funcionario']['departamento']); ?>&nbsp;</td>
+		<td class="actions">
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $funcionario['Funcionario']['IDfuncionario'])); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $funcionario['Funcionario']['IDfuncionario'])); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $funcionario['Funcionario']['IDfuncionario']), array(), __('Are you sure you want to delete # %s?', $funcionario['Funcionario']['IDfuncionario'])); ?>
+		</td>
+	</tr>
+<?php endforeach; ?>
+	</table>
+	<p>
+	<?php
+	echo $this->Paginator->counter(array(
+	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
+	));
+	?>	</p>
+	<div class="paging">
+	<?php
+		echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
+		echo $this->Paginator->numbers(array('separator' => ''));
+		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
+	?>
+	</div>
 </div>
-<div class="funcionario index large-10 medium-9 columns">
-    <table cellpadding="0" cellspacing="0">
-    <thead>
-        <tr>
-            <th><?= $this->Paginator->sort('IDfuncionario') ?></th>
-            <th><?= $this->Paginator->sort('nome') ?></th>
-            <th><?= $this->Paginator->sort('login') ?></th>
-            <th><?= $this->Paginator->sort('senha') ?></th>
-            <th><?= $this->Paginator->sort('responsavel') ?></th>
-            <th><?= $this->Paginator->sort('departamento') ?></th>
-            <th class="actions"><?= __('Actions') ?></th>
-        </tr>
-    </thead>
-    <tbody>
-    <?php foreach ($funcionario as $funcionario): ?>
-        <tr>
-            <td><?= $this->Number->format($funcionario->IDfuncionario) ?></td>
-            <td><?= h($funcionario->nome) ?></td>
-            <td><?= h($funcionario->login) ?></td>
-            <td><?= h($funcionario->senha) ?></td>
-            <td><?= $this->Number->format($funcionario->responsavel) ?></td>
-            <td><?= h($funcionario->departamento) ?></td>
-            <td class="actions">
-                <?= $this->Html->link(__('View'), ['action' => 'view', $funcionario->IDfuncionario]) ?>
-                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $funcionario->IDfuncionario]) ?>
-                <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $funcionario->IDfuncionario], ['confirm' => __('Are you sure you want to delete # {0}?', $funcionario->IDfuncionario)]) ?>
-            </td>
-        </tr>
-
-    <?php endforeach; ?>
-    </tbody>
-    </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-        </ul>
-        <p><?= $this->Paginator->counter() ?></p>
-    </div>
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+		<li><?php echo $this->Html->link(__('New Funcionario'), array('action' => 'add')); ?></li>
+	</ul>
 </div>

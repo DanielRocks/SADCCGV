@@ -65,12 +65,12 @@
 class DATABASE_CONFIG {
 
 	public $default = array(
-		'datasource' => 'Database/Mysql',
+		'datasource' => 'br-cdbr-azure-south-a.cloudapp.net',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'root',
-		'password' => '',
-		'database' => 'sad',
+		'login' => 'be44bc1f56f4bf',
+		'password' => '0f2d955d',
+		'database' => 'sadccgvAnXCP26q6',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

@@ -1,26 +1,29 @@
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('Edit Perguntum'), ['action' => 'edit', $perguntum->IDpergunta]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Perguntum'), ['action' => 'delete', $perguntum->IDpergunta], ['confirm' => __('Are you sure you want to delete # {0}?', $perguntum->IDpergunta)]) ?> </li>
-        <li><?= $this->Html->link(__('List Pergunta'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Perguntum'), ['action' => 'add']) ?> </li>
-    </ul>
+<div class="pergunta view">
+<h2><?php echo __('Perguntum'); ?></h2>
+	<dl>
+		<dt><?php echo __('IDpergunta'); ?></dt>
+		<dd>
+			<?php echo h($perguntum['Perguntum']['IDpergunta']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('IDquestionario'); ?></dt>
+		<dd>
+			<?php echo h($perguntum['Perguntum']['IDquestionario']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Pergunta'); ?></dt>
+		<dd>
+			<?php echo h($perguntum['Perguntum']['pergunta']); ?>
+			&nbsp;
+		</dd>
+	</dl>
 </div>
-<div class="pergunta view large-10 medium-9 columns">
-    <h2><?= h($perguntum->IDpergunta) ?></h2>
-    <div class="row">
-        <div class="large-2 columns numbers end">
-            <h6 class="subheader"><?= __('IDpergunta') ?></h6>
-            <p><?= $this->Number->format($perguntum->IDpergunta) ?></p>
-            <h6 class="subheader"><?= __('IDquestionario') ?></h6>
-            <p><?= $this->Number->format($perguntum->IDquestionario) ?></p>
-        </div>
-    </div>
-    <div class="row texts">
-        <div class="columns large-9">
-            <h6 class="subheader"><?= __('Pergunta') ?></h6>
-            <?= $this->Text->autoParagraph(h($perguntum->pergunta)) ?>
-        </div>
-    </div>
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+		<li><?php echo $this->Html->link(__('Edit Perguntum'), array('action' => 'edit', $perguntum['Perguntum']['IDpergunta'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete Perguntum'), array('action' => 'delete', $perguntum['Perguntum']['IDpergunta']), array(), __('Are you sure you want to delete # %s?', $perguntum['Perguntum']['IDpergunta'])); ?> </li>
+		<li><?php echo $this->Html->link(__('List Pergunta'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Perguntum'), array('action' => 'add')); ?> </li>
+	</ul>
 </div>

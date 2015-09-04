@@ -1,39 +1,42 @@
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('New Relatorio'), ['action' => 'add']) ?></li>
-    </ul>
+<div class="relatorios index">
+	<h2><?php echo __('Relatorios'); ?></h2>
+	<table cellpadding="0" cellspacing="0">
+	<tr>
+			<th><?php echo $this->Paginator->sort('IDrelatorio'); ?></th>
+			<th><?php echo $this->Paginator->sort('IDfuncionario'); ?></th>
+			<th><?php echo $this->Paginator->sort('avaliacao'); ?></th>
+			<th class="actions"><?php echo __('Actions'); ?></th>
+	</tr>
+	<?php foreach ($relatorios as $relatorio): ?>
+	<tr>
+		<td><?php echo h($relatorio['Relatorio']['IDrelatorio']); ?>&nbsp;</td>
+		<td><?php echo h($relatorio['Relatorio']['IDfuncionario']); ?>&nbsp;</td>
+		<td><?php echo h($relatorio['Relatorio']['avaliacao']); ?>&nbsp;</td>
+		<td class="actions">
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $relatorio['Relatorio']['IDrelatorio'])); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $relatorio['Relatorio']['IDrelatorio'])); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $relatorio['Relatorio']['IDrelatorio']), array(), __('Are you sure you want to delete # %s?', $relatorio['Relatorio']['IDrelatorio'])); ?>
+		</td>
+	</tr>
+<?php endforeach; ?>
+	</table>
+	<p>
+	<?php
+	echo $this->Paginator->counter(array(
+	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
+	));
+	?>	</p>
+	<div class="paging">
+	<?php
+		echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
+		echo $this->Paginator->numbers(array('separator' => ''));
+		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
+	?>
+	</div>
 </div>
-<div class="relatorio index large-10 medium-9 columns">
-    <table cellpadding="0" cellspacing="0">
-    <thead>
-        <tr>
-            <th><?= $this->Paginator->sort('IDrelatorio') ?></th>
-            <th><?= $this->Paginator->sort('IDfuncionario') ?></th>
-            <th class="actions"><?= __('Actions') ?></th>
-        </tr>
-    </thead>
-    <tbody>
-    <?php foreach ($relatorio as $relatorio): ?>
-        <tr>
-            <td><?= $this->Number->format($relatorio->IDrelatorio) ?></td>
-            <td><?= $this->Number->format($relatorio->IDfuncionario) ?></td>
-            <td class="actions">
-                <?= $this->Html->link(__('View'), ['action' => 'view', $relatorio->IDrelatorio]) ?>
-                <?= $this->Html->link(__('Edit'), ['action' => 'edit', $relatorio->IDrelatorio]) ?>
-                <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $relatorio->IDrelatorio], ['confirm' => __('Are you sure you want to delete # {0}?', $relatorio->IDrelatorio)]) ?>
-            </td>
-        </tr>
-
-    <?php endforeach; ?>
-    </tbody>
-    </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-        </ul>
-        <p><?= $this->Paginator->counter() ?></p>
-    </div>
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+		<li><?php echo $this->Html->link(__('New Relatorio'), array('action' => 'add')); ?></li>
+	</ul>
 </div>

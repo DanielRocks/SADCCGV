@@ -1,18 +1,18 @@
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('List Relatorio'), ['action' => 'index']) ?></li>
-    </ul>
+<div class="relatorios form">
+<?php echo $this->Form->create('Relatorio'); ?>
+	<fieldset>
+		<legend><?php echo __('Add Relatorio'); ?></legend>
+	<?php
+		echo $this->Form->input('IDfuncionario');
+		echo $this->Form->input('avaliacao');
+	?>
+	</fieldset>
+<?php echo $this->Form->end(__('Submit')); ?>
 </div>
-<div class="relatorio form large-10 medium-9 columns">
-    <?= $this->Form->create($relatorio) ?>
-    <fieldset>
-        <legend><?= __('Add Relatorio') ?></legend>
-        <?php
-            echo $this->Form->input('IDfuncionario');
-            echo $this->Form->input('avaliacao');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+
+		<li><?php echo $this->Html->link(__('List Relatorios'), array('action' => 'index')); ?></li>
+	</ul>
 </div>

@@ -1,20 +1,24 @@
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('Edit Gerente'), ['action' => 'edit', $gerente->IDgerente]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Gerente'), ['action' => 'delete', $gerente->IDgerente], ['confirm' => __('Are you sure you want to delete # {0}?', $gerente->IDgerente)]) ?> </li>
-        <li><?= $this->Html->link(__('List Gerente'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Gerente'), ['action' => 'add']) ?> </li>
-    </ul>
+<div class="gerentes view">
+<h2><?php echo __('Gerente'); ?></h2>
+	<dl>
+		<dt><?php echo __('IDgerente'); ?></dt>
+		<dd>
+			<?php echo h($gerente['Gerente']['IDgerente']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('IDfuncionario'); ?></dt>
+		<dd>
+			<?php echo h($gerente['Gerente']['IDfuncionario']); ?>
+			&nbsp;
+		</dd>
+	</dl>
 </div>
-<div class="gerente view large-10 medium-9 columns">
-    <h2><?= h($gerente->IDgerente) ?></h2>
-    <div class="row">
-        <div class="large-2 columns numbers end">
-            <h6 class="subheader"><?= __('IDgerente') ?></h6>
-            <p><?= $this->Number->format($gerente->IDgerente) ?></p>
-            <h6 class="subheader"><?= __('IDfuncionario') ?></h6>
-            <p><?= $this->Number->format($gerente->IDfuncionario) ?></p>
-        </div>
-    </div>
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+		<li><?php echo $this->Html->link(__('Edit Gerente'), array('action' => 'edit', $gerente['Gerente']['IDgerente'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete Gerente'), array('action' => 'delete', $gerente['Gerente']['IDgerente']), array(), __('Are you sure you want to delete # %s?', $gerente['Gerente']['IDgerente'])); ?> </li>
+		<li><?php echo $this->Html->link(__('List Gerentes'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Gerente'), array('action' => 'add')); ?> </li>
+	</ul>
 </div>
