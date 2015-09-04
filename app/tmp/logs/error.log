@@ -1,20 +1,1196 @@
-2015-09-04 02:45:41 Error: Fatal Error (1): Class 'App\Controller\AppController' not found in [C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php, line 12]
-2015-09-04 02:45:41 Error: [FatalErrorException] Class 'App\Controller\AppController' not found
+2015-09-04 05:13:21 Error: [MissingControllerException] Controller class OpcaoController could not be found.
+Exception Attributes: array (
+  'class' => 'OpcaoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/opcao
+Stack Trace:
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 05:14:18 Error: [MissingControllerException] Controller class OpcaoController could not be found.
+Exception Attributes: array (
+  'class' => 'OpcaoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/opcao
+Stack Trace:
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 05:14:20 Error: [MissingControllerException] Controller class OpcaoController could not be found.
+Exception Attributes: array (
+  'class' => 'OpcaoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/opcao
+Stack Trace:
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 05:14:20 Error: [MissingControllerException] Controller class OpcaoController could not be found.
+Exception Attributes: array (
+  'class' => 'OpcaoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/opcao
+Stack Trace:
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 05:14:52 Error: [MissingControllerException] Controller class OpcaoController could not be found.
+Exception Attributes: array (
+  'class' => 'OpcaoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/opcao
+Stack Trace:
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 05:14:53 Error: [MissingControllerException] Controller class OpcaoController could not be found.
+Exception Attributes: array (
+  'class' => 'OpcaoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/opcao
+Stack Trace:
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 05:14:53 Error: [MissingControllerException] Controller class OpcaoController could not be found.
+Exception Attributes: array (
+  'class' => 'OpcaoController',
+  'plugin' => NULL,
+)
+Request URL: /cake/opcao
+Stack Trace:
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 05:17:14 Error: [MissingControllerException] Controller class FuncionarioController could not be found.
+Exception Attributes: array (
+  'class' => 'FuncionarioController',
+  'plugin' => NULL,
+)
 Request URL: /cake/funcionario
 Stack Trace:
-#0 C:\xampp\htdocs\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'App\\Cont...', 'C:\\xampp\\htdocs...', 12)
-#1 [internal function]: ErrorHandler::handleError(1, 'Class 'App\\Cont...', 'C:\\xampp\\htdocs...', 12, Array)
-#2 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'App\\Cont...', 'C:\\xampp\\htdocs...', 12, Array)
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 05:18:19 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php, line 9]
+2015-09-04 05:18:19 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 9, Array)
 #3 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
-2015-09-04 02:47:13 Error: Fatal Error (1): Class 'App\Controller\AppController' not found in [C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php, line 12]
-2015-09-04 02:47:13 Error: [FatalErrorException] Class 'App\Controller\AppController' not found
+2015-09-04 05:18:37 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php, line 9]
+2015-09-04 05:18:37 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-04 05:18:47 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php, line 9]
+2015-09-04 05:18:47 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-04 05:19:32 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(9): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:19:34 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(9): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:22:12 Error: [MissingControllerException] Controller class EscolhaController could not be found.
+Exception Attributes: array (
+  'class' => 'EscolhaController',
+  'plugin' => NULL,
+)
+Request URL: /cake/escolha
+Stack Trace:
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 05:22:19 Error: [MissingTableException] Table escolhas for model Escolha was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'escolhas',
+  'class' => 'Escolha',
+  'ds' => 'default',
+)
+Request URL: /cake/escolha
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('escolhas')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\EscolhaController.php(9): Model->find('all')
+#4 [internal function]: EscolhaController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EscolhaController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EscolhaController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:22:44 Error: [MissingTableException] Table gerentes for model Gerente was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'gerentes',
+  'class' => 'Gerente',
+  'ds' => 'default',
+)
+Request URL: /cake/Gerente
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('gerentes')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\GerenteController.php(9): Model->find('all')
+#4 [internal function]: GerenteController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(GerenteController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(GerenteController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:23:20 Error: [MissingTableException] Table opcaos for model Opcao was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'opcaos',
+  'class' => 'Opcao',
+  'ds' => 'default',
+)
+Request URL: /cake/opcao
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('opcaos')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\OpcaoController.php(9): Model->find('all')
+#4 [internal function]: OpcaoController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(OpcaoController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(OpcaoController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:23:45 Error: [MissingTableException] Table relatorios for model Relatorio was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'relatorios',
+  'class' => 'Relatorio',
+  'ds' => 'default',
+)
+Request URL: /cake/relatorio
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('relatorios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\RelatorioController.php(9): Model->find('all')
+#4 [internal function]: RelatorioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(RelatorioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(RelatorioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:28:26 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(9): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:30:00 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in [C:\xampp\htdocs\cake\app\View\Pages\home.ctp, line 205]
+2015-09-04 05:30:00 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';'
+Request URL: /cake/
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 205)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 205, Array)
+#2 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 205, Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-04 05:30:32 Error: Fatal Error (4): syntax error, unexpected '?' in [C:\xampp\htdocs\cake\app\View\Pages\home.ctp, line 216]
+2015-09-04 05:30:32 Error: [FatalErrorException] syntax error, unexpected '?'
+Request URL: /cake/
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 216)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 216, Array)
+#2 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 216, Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-04 05:35:23 Error: [MissingControllerException] Controller class FuncionariosController could not be found.
+Exception Attributes: array (
+  'class' => 'FuncionariosController',
+  'plugin' => NULL,
+)
+Request URL: /cake/Funcionarios
+Stack Trace:
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 05:35:26 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/Funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(9): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:35:52 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/Funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(9): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:35:52 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/Funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(9): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:36:00 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(9): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:50:29 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(9): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:50:31 Error: [MissingControllerException] Controller class FuncionariosController could not be found.
+Exception Attributes: array (
+  'class' => 'FuncionariosController',
+  'plugin' => NULL,
+)
+Request URL: /cake/funcionarios
+Stack Trace:
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 05:50:43 Error: [MissingControllerException] Controller class FuncionariossssController could not be found.
+Exception Attributes: array (
+  'class' => 'FuncionariossssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/funcionariossss
+Stack Trace:
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 05:50:49 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(9): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:50:53 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(9): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:51:10 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(9): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:51:11 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(9): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:53:10 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:53:11 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:53:11 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:53:15 Error: [MissingControllerException] Controller class FuncionariosController could not be found.
+Exception Attributes: array (
+  'class' => 'FuncionariosController',
+  'plugin' => NULL,
+)
+Request URL: /cake/funcionarios
+Stack Trace:
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 05:53:21 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:59:02 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 05:59:40 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:00:38 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:03:03 Error: [MissingControllerException] Controller class FuncionarioController could not be found.
+Exception Attributes: array (
+  'class' => 'FuncionarioController',
+  'plugin' => NULL,
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 06:03:14 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:08:07 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:08:08 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:08:09 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:08:09 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:08:09 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:08:10 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:08:10 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:08:10 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:08:10 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:08:10 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:08:10 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:08:10 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:08:11 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:08:11 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:08:11 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:10:46 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:10:54 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:10:55 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:10:55 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:10:55 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:10:56 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:10:57 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:12:52 Error: Fatal Error (4): syntax error, unexpected '?' in [C:\xampp\htdocs\cake\app\View\Pages\home.ctp, line 216]
+2015-09-04 06:12:52 Error: [FatalErrorException] syntax error, unexpected '?'
+Request URL: /cake/
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 216)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 216, Array)
+#2 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 216, Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-04 06:13:34 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:13:40 Error: [MissingControllerException] Controller class FuncionariosController could not be found.
+Exception Attributes: array (
+  'class' => 'FuncionariosController',
+  'plugin' => NULL,
+)
+Request URL: /cake/funcionarios
+Stack Trace:
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 06:13:47 Error: [MissingControllerException] Controller class FuncionariossController could not be found.
+Exception Attributes: array (
+  'class' => 'FuncionariossController',
+  'plugin' => NULL,
+)
+Request URL: /cake/funcionarioss
+Stack Trace:
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 06:13:50 Error: [MissingControllerException] Controller class FuncionariosController could not be found.
+Exception Attributes: array (
+  'class' => 'FuncionariosController',
+  'plugin' => NULL,
+)
+Request URL: /cake/funcionarios
+Stack Trace:
+#0 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-04 06:13:51 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:16:51 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:16:54 Error: [MissingActionException] Action FuncionariosController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'FuncionariosController',
+  'action' => 'add',
+)
 Request URL: /cake/funcionario/add
 Stack Trace:
-#0 C:\xampp\htdocs\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'App\\Cont...', 'C:\\xampp\\htdocs...', 12)
-#1 [internal function]: ErrorHandler::handleError(1, 'Class 'App\\Cont...', 'C:\\xampp\\htdocs...', 12, Array)
-#2 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'App\\Cont...', 'C:\\xampp\\htdocs...', 12, Array)
-#3 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
-#4 [internal function]: App::shutdown()
-#5 {main}
+#0 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#2 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-09-04 06:18:06 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario/add
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(800): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(14): Model->__call('newEntity', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(14): Funcionario->newEntity()
+#4 [internal function]: FuncionarioController->add()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:18:10 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:18:10 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:18:54 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-09-04 06:19:12 Error: [MissingTableException] Table funcionarios for model Funcionario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'funcionarios',
+  'class' => 'Funcionario',
+  'ds' => 'default',
+)
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(3501): Model->setSource('funcionarios')
+#1 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\xampp\htdocs\cake\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php(10): Model->find('all')
+#4 [internal function]: FuncionarioController->index()
+#5 C:\xampp\htdocs\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(FuncionarioController), Array)
+#6 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\cake\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FuncionarioController), Object(CakeRequest))
+#8 C:\xampp\htdocs\cake\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
