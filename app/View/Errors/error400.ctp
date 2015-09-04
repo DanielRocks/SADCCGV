@@ -1,9 +1,6 @@
 <?php
 /**
- * Application level Controller
  *
- * This file is application-wide controller file. You can put all
- * application-wide controller-related methods here.
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
@@ -14,21 +11,21 @@
  *
  * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.Controller
- * @since         CakePHP(tm) v 0.2.9
+ * @package       app.View.Errors
+ * @since         CakePHP(tm) v 0.10.0.1076
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
-App::uses('Controller', 'Controller');
-
-/**
- * Application Controller
- *
- * Add your application-wide methods in the class below, your controllers
- * will inherit them.
- *
- * @package		app.Controller
- * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
- */
-class AppController extends Controller {
-}
+?>
+<h2><?php echo $message; ?></h2>
+<p class="error">
+	<strong><?php echo __d('cake', 'Error'); ?>: </strong>
+	<?php printf(
+		__d('cake', 'The requested address %s was not found on this server.'),
+		"<strong>'{$url}'</strong>"
+	); ?>
+</p>
+<?php
+if (Configure::read('debug') > 0):
+	echo $this->element('exception_stack_trace');
+endif;
+?>

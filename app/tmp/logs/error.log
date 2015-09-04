@@ -1,0 +1,20 @@
+2015-09-04 02:45:41 Error: Fatal Error (1): Class 'App\Controller\AppController' not found in [C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php, line 12]
+2015-09-04 02:45:41 Error: [FatalErrorException] Class 'App\Controller\AppController' not found
+Request URL: /cake/funcionario
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'App\\Cont...', 'C:\\xampp\\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'App\\Cont...', 'C:\\xampp\\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'App\\Cont...', 'C:\\xampp\\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-04 02:47:13 Error: Fatal Error (1): Class 'App\Controller\AppController' not found in [C:\xampp\htdocs\cake\app\Controller\FuncionarioController.php, line 12]
+2015-09-04 02:47:13 Error: [FatalErrorException] Class 'App\Controller\AppController' not found
+Request URL: /cake/funcionario/add
+Stack Trace:
+#0 C:\xampp\htdocs\cake\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'App\\Cont...', 'C:\\xampp\\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'App\\Cont...', 'C:\\xampp\\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'App\\Cont...', 'C:\\xampp\\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\cake\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
