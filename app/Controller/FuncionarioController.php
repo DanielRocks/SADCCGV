@@ -15,6 +15,18 @@ class FuncionarioController extends AppController {
  * @var array
  */
 	public $components = array('Paginator', 'Session');
+	
+	public $helpers = array(
+    'Html' => array(
+        'className' => 'Bootstrap3.BootstrapHtml'
+    ),
+    'Form' => array(
+        'className' => 'Bootstrap3.BootstrapForm'
+    ),
+    'Modal' => array(
+        'className' => 'Bootstrap3.BootstrapModal'
+    )
+);
 
 /**
  * index method

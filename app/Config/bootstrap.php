@@ -92,6 +92,8 @@ Configure::write('Dispatcher.filters', array(
 	'CacheDispatcher'
 ));
 
+CakePlugin::load('Bootstrap3') ;
+
 /**
  * Configures default file logging options
  */
