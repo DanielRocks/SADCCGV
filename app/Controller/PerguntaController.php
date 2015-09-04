@@ -1,5 +1,9 @@
 <!-- File: /app/Controller/PerguntaController.php -->
 <?php
+namespace App\Controller;
+
+use App\Controller\AppController;
+
 class PerguntaController extends AppController {
 	public $helpers = array ('Html','Form');
     public $name = 'Perguntas';

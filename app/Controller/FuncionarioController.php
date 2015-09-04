@@ -1,5 +1,9 @@
 <!-- File: /app/Controller/FuncionarioController.php -->
 <?php
+namespace App\Controller;
+
+use App\Controller\AppController;
+
 class FuncionarioController extends AppController {
 	public $helpers = array ('Html','Form');
 	public $name = 'Funcionarios';

@@ -1,5 +1,9 @@
 <!-- File: /app/Controller/EscolhaController.php -->
 <?php
+namespace App\Controller;
+
+use App\Controller\AppController;
+
 class EscolhaController extends AppController {
 	public $helpers = array ('Html','Form');
     public $name = 'Escolhas';

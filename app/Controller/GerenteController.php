@@ -1,5 +1,9 @@
 <!-- File: /app/Controller/GerenteController.php -->
 <?php
+namespace App\Controller;
+
+use App\Controller\AppController;
+
 class GerenteController extends AppController {
 	public $helpers = array ('Html','Form');
     public $name = 'Gerentes';
