@@ -14,4 +14,3 @@ class FuncionarioController extends AppController {
 		$this->set('funcionarios', $this->Funcionario->find('all'));
 	}
 }
-?>
