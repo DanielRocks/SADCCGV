@@ -1,4 +1,4 @@
 <?php
 /* Redirect browser */
-header("Location: ../Funcionario");
+header ("Location: ".$this->Html->url('/funcionario'));
 ?>
