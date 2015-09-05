@@ -2,20 +2,20 @@
 	<h2><?php echo __('Funcionarios'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('IDfuncionario'); ?></th>
+			<!--<th><?php echo $this->Paginator->sort('IDfuncionario'); ?></th>-->
 			<th><?php echo $this->Paginator->sort('nome'); ?></th>
-			<th><?php echo $this->Paginator->sort('login'); ?></th>
-			<th><?php echo $this->Paginator->sort('senha'); ?></th>
+			<!--<th><?php echo $this->Paginator->sort('login'); ?></th>-->
+			<!--<th><?php echo $this->Paginator->sort('senha'); ?></th>-->
 			<th><?php echo $this->Paginator->sort('responsavel'); ?></th>
 			<th><?php echo $this->Paginator->sort('departamento'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($funcionarios as $funcionario): ?>
 	<tr>
-		<td><?php echo h($funcionario['Funcionario']['IDfuncionario']); ?>&nbsp;</td>
+		<!--<td><?php echo h($funcionario['Funcionario']['IDfuncionario']); ?>&nbsp;</td>-->
 		<td><?php echo h($funcionario['Funcionario']['nome']); ?>&nbsp;</td>
-		<td><?php echo h($funcionario['Funcionario']['login']); ?>&nbsp;</td>
-		<td><?php echo h($funcionario['Funcionario']['senha']); ?>&nbsp;</td>
+		<!--<td><?php echo h($funcionario['Funcionario']['login']); ?>&nbsp;</td>-->
+		<!--<td><?php echo h($funcionario['Funcionario']['senha']); ?>&nbsp;</td>-->
 		<td><?php echo h($funcionario['Funcionario']['responsavel']); ?>&nbsp;</td>
 		<td><?php echo h($funcionario['Funcionario']['departamento']); ?>&nbsp;</td>
 		<td class="actions">
