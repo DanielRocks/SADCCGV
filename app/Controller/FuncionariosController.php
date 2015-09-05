@@ -7,7 +7,7 @@
  * @property PaginatorComponent $Paginator
  * @property SessionComponent $Session
  */
-class FuncionarioController extends AppController {
+class FuncionariosController extends AppController {
 
 /**
  * Components
