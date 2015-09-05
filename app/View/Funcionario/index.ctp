@@ -8,7 +8,7 @@
 			<!--<th><?php echo $this->Paginator->sort('senha'); ?></th>-->
 			<th><?php echo $this->Paginator->sort('responsavel'); ?></th>
 			<th><?php echo $this->Paginator->sort('departamento'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
+			<!--<th class="actions"><?php echo __('Actions'); ?></th>-->
 	</tr>
 	<?php foreach ($funcionarios as $funcionario): ?>
 	<tr>
