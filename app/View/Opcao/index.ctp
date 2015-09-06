@@ -39,5 +39,6 @@
 	<ul>
         <li><?php echo $this->Html->link(__('Início'), array('action' => '../Funcionario/index')); ?></li>
 		<li><?php echo $this->Html->link(__('Nova Opcao'), array('action' => 'add')); ?></li>
+        <li><?php echo $this->Html->link(__('Escolhas'), array('action' => '../Escolha/index')); ?></li>
 	</ul>
 </div>
