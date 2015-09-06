@@ -16,11 +16,11 @@
 			<?php echo h($funcionario['Funcionario']['login']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Senha'); ?></dt>
+		<!--<dt><?php echo __('Senha'); ?></dt>
 		<dd>
 			<?php echo h($funcionario['Funcionario']['senha']); ?>
 			&nbsp;
-		</dd>
+		</dd>-->
 		<dt><?php echo __('Responsavel'); ?></dt>
 		<dd>
 			<?php echo h($funcionario['Funcionario']['responsavel']); ?>
