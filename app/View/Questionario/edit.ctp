@@ -4,7 +4,7 @@
 		<legend><?php echo __('Edit Questionario'); ?></legend>
 	<?php
 		echo $this->Form->input('IDquestionario');
-		echo $this->Form->input('IDfuncionario');
+		echo $this->Form->input('funcionario_id');
 		echo $this->Form->input('titulo');
 	?>
 	</fieldset>
