@@ -2,8 +2,8 @@
 	<h2><?php echo __('Relatorios'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('IDrelatorio'); ?></th>
-			<th><?php echo $this->Paginator->sort('IDfuncionario'); ?></th>
+			<th><?php echo $this->Paginator->sort('ID do Relatorio'); ?></th>
+			<th><?php echo $this->Paginator->sort('ID do Funcionario'); ?></th>
 			<th><?php echo $this->Paginator->sort('avaliacao'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
@@ -13,9 +13,9 @@
 		<td><?php echo h($relatorio['Relatorio']['IDfuncionario']); ?>&nbsp;</td>
 		<td><?php echo h($relatorio['Relatorio']['avaliacao']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $relatorio['Relatorio']['IDrelatorio'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $relatorio['Relatorio']['IDrelatorio'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $relatorio['Relatorio']['IDrelatorio']), array(), __('Are you sure you want to delete # %s?', $relatorio['Relatorio']['IDrelatorio'])); ?>
+			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $relatorio['Relatorio']['IDrelatorio'])); ?>
+			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $relatorio['Relatorio']['IDrelatorio'])); ?>
+			<?php echo $this->Form->postLink(__('Deletar'), array('action' => 'delete', $relatorio['Relatorio']['IDrelatorio']), array(), __('Are you sure you want to delete # %s?', $relatorio['Relatorio']['IDrelatorio'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -37,6 +37,7 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New Relatorio'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('Novo Relatorio'), array('action' => 'add')); ?></li>
+        <li><?php echo $this->Html->link(__('Funcionários'), array('action' => '../Funcionario/index')); ?></li>
 	</ul>
 </div>

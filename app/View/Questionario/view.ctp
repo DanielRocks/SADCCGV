@@ -24,6 +24,7 @@
 		<li><?php echo $this->Html->link(__('Edit Questionario'), array('action' => 'edit', $questionario['Questionario']['IDquestionario'])); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Delete Questionario'), array('action' => 'delete', $questionario['Questionario']['IDquestionario']), array(), __('Are you sure you want to delete # %s?', $questionario['Questionario']['IDquestionario'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Questionarios'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Questionario'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Novo Questionario'), array('action' => 'add')); ?> </li>
+        <li><?php echo $this->Html->link(__('Nova Opcao'), array('action' => '../Opcao/add')); ?> </li>
 	</ul>
 </div>
