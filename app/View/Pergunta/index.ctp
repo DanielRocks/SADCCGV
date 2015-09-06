@@ -38,5 +38,6 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('Nova Pergunta'), array('action' => 'add')); ?></li>
+        <li><?php echo $this->Html->link(__('Funcionários'), array('action' => '../Funcionario/index')); ?></li>
 	</ul>
 </div>
