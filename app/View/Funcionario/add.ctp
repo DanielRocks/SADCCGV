@@ -4,8 +4,8 @@
 		<legend><?php echo __('Add Funcionario'); ?></legend>
 	<?php
 		echo $this->Form->input('nome');
-		echo $this->Form->input('login');
-		echo $this->Form->input('senha');
+		echo $this->Form->input('username');
+		echo $this->Form->input('password');
 		echo $this->Form->input('responsavel');
 		echo $this->Form->input('departamento');
 	?>

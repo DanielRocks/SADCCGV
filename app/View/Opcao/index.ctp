@@ -2,20 +2,20 @@
 	<h2><?php echo __('Opcaos'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('IDopcao'); ?></th>
-			<th><?php echo $this->Paginator->sort('IDpergunta'); ?></th>
+			<!--<th><?php echo $this->Paginator->sort('IDopcao'); ?></th>-->
+			<!--<th><?php echo $this->Paginator->sort('IDpergunta'); ?></th>-->
 			<th><?php echo $this->Paginator->sort('opcao'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($opcaos as $opcao): ?>
 	<tr>
-		<td><?php echo h($opcao['Opcao']['IDopcao']); ?>&nbsp;</td>
-		<td><?php echo h($opcao['Opcao']['IDpergunta']); ?>&nbsp;</td>
+		<!--<td><?php echo h($opcao['Opcao']['IDopcao']); ?>&nbsp;</td>-->
+		<!--<td><?php echo h($opcao['Opcao']['IDpergunta']); ?>&nbsp;</td>-->
 		<td><?php echo h($opcao['Opcao']['opcao']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $opcao['Opcao']['IDopcao'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $opcao['Opcao']['IDopcao'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $opcao['Opcao']['IDopcao']), array(), __('Are you sure you want to delete # %s?', $opcao['Opcao']['IDopcao'])); ?>
+			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $opcao['Opcao']['IDopcao'])); ?>
+			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $opcao['Opcao']['IDopcao'])); ?>
+			<?php echo $this->Form->postLink(__('Deletar'), array('action' => 'delete', $opcao['Opcao']['IDopcao']), array(), __('Are you sure you want to delete # %s?', $opcao['Opcao']['IDopcao'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -37,6 +37,6 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New Opcao'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('Nova Opcao'), array('action' => 'add')); ?></li>
 	</ul>
 </div>
