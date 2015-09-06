@@ -19,9 +19,9 @@
 		<td><?php echo h($funcionario['Funcionario']['responsavel']); ?>&nbsp;</td>
 		<td><?php echo h($funcionario['Funcionario']['departamento']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $funcionario['Funcionario']['IDfuncionario'])); ?>
-			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $funcionario['Funcionario']['IDfuncionario'])); ?>
-			<?php echo $this->Form->postLink(__('Deletar'), array('action' => 'delete', $funcionario['Funcionario']['IDfuncionario']), array(), __('Are you sure you want to delete # %s?', $funcionario['Funcionario']['IDfuncionario'])); ?>
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $funcionario['Funcionario']['IDfuncionario'])); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $funcionario['Funcionario']['IDfuncionario'])); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $funcionario['Funcionario']['IDfuncionario']), array(), __('Are you sure you want to delete # %s?', $funcionario['Funcionario']['IDfuncionario'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -43,7 +43,6 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Novo Funcionario'), array('action' => 'add')); ?></li>
-        <li><?php echo $this->Html->link(__('Questionarios'), array('action' => '../Questionario/index')); ?></li>
+		<li><?php echo $this->Html->link(__('New Funcionario'), array('action' => 'add')); ?></li>
 	</ul>
 </div>

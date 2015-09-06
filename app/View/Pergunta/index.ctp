@@ -2,20 +2,20 @@
 	<h2><?php echo __('Pergunta'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<!--<th><?php echo $this->Paginator->sort('IDpergunta'); ?></th>-->
-			<!--<th><?php echo $this->Paginator->sort('IDquestionario'); ?></th>-->
+			<th><?php echo $this->Paginator->sort('IDpergunta'); ?></th>
+			<th><?php echo $this->Paginator->sort('IDquestionario'); ?></th>
 			<th><?php echo $this->Paginator->sort('pergunta'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($pergunta as $perguntum): ?>
 	<tr>
-		<!--<td><?php echo h($perguntum['Perguntum']['IDpergunta']); ?>&nbsp;</td>-->
-		<!--<td><?php echo h($perguntum['Perguntum']['IDquestionario']); ?>&nbsp;</td>-->
+		<td><?php echo h($perguntum['Perguntum']['IDpergunta']); ?>&nbsp;</td>
+		<td><?php echo h($perguntum['Perguntum']['IDquestionario']); ?>&nbsp;</td>
 		<td><?php echo h($perguntum['Perguntum']['pergunta']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('Ver'), array('action' => 'view', $perguntum['Perguntum']['IDpergunta'])); ?>
-			<?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $perguntum['Perguntum']['IDpergunta'])); ?>
-			<?php echo $this->Form->postLink(__('Deletar'), array('action' => 'delete', $perguntum['Perguntum']['IDpergunta']), array(), __('Are you sure you want to delete # %s?', $perguntum['Perguntum']['IDpergunta'])); ?>
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $perguntum['Perguntum']['IDpergunta'])); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $perguntum['Perguntum']['IDpergunta'])); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $perguntum['Perguntum']['IDpergunta']), array(), __('Are you sure you want to delete # %s?', $perguntum['Perguntum']['IDpergunta'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -37,8 +37,6 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-        <li><?php echo $this->Html->link(__('Opções'), array('action' => '../Opcao/index')); ?></li>
-        <li><?php echo $this->Html->link(__('Início'), array('action' => '../Funcionario/index')); ?></li>
-		<li><?php echo $this->Html->link(__('Nova Pergunta'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('New Perguntum'), array('action' => 'add')); ?></li>
 	</ul>
 </div>
