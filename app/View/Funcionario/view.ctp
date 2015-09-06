@@ -38,7 +38,8 @@
 	<ul>
 		<li><?php echo $this->Html->link(__('Edit Funcionario'), array('action' => 'edit', $funcionario['Funcionario']['IDfuncionario'])); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Delete Funcionario'), array('action' => 'delete', $funcionario['Funcionario']['IDfuncionario']), array(), __('Are you sure you want to delete # %s?', $funcionario['Funcionario']['IDfuncionario'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Funcionarios'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Funcionario'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Listar Funcionarios'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Novo Funcionario'), array('action' => 'add')); ?> </li>
+        <li><?php echo $this->Html->link(__('Novo Questionario'), array('action' => '../Questionario/add')); ?> </li>
 	</ul>
 </div>
