@@ -8,7 +8,7 @@
 		</dd>
 		<dt><?php echo __('IDfuncionario'); ?></dt>
 		<dd>
-			<?php echo h($relatorio['Relatorio']['IDfuncionario']); ?>
+			<?php echo h($relatorio['Relatorio']['funcionario_id']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Avaliacao'); ?></dt>
