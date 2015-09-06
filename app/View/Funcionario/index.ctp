@@ -45,5 +45,6 @@
 	<ul>
 		<li><?php echo $this->Html->link(__('Novo Funcionario'), array('action' => 'add')); ?></li>
         <li><?php echo $this->Html->link(__('Questionarios'), array('action' => '../Questionario/index')); ?></li>
+        <li><?php echo $this->Html->link(__('Relatorios'), array('action' => '../Relatorio/index')); ?></li>
 	</ul>
 </div>
