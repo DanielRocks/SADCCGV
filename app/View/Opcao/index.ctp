@@ -37,6 +37,8 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
+        <li><?php echo $this->Html->link(__('Inicio'), array('action' => '../Funcionario/index')); ?></li>
 		<li><?php echo $this->Html->link(__('Nova Opcao'), array('action' => 'add')); ?></li>
+        <li><?php echo $this->Html->link(__('Escolhas'), array('action' => '../Escolha/index')); ?></li>
 	</ul>
 </div>

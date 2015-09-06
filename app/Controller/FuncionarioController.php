@@ -28,22 +28,6 @@ class FuncionarioController extends AppController {
     )
 );
 
-	public function beforeFilter()
-	{
-		parent::beforeFilter();
-		//$this->Auth->allow('add');
-	}
-	
-	public function login()
-	{
-		
-	}
-	
-	public function logout()
-	{
-		$this->redirect($this->Auth->logout());
-	}
-
 /**
  * index method
  *
