@@ -58,9 +58,6 @@ try
 			}
 		}
 		
-		echo '<div class="sub-header"><a class="btn btn-large" href="../SAD/cadastroQuestionario.php?x='. $contatosEncontrados['login'].'"><h3>Cadastrar Questionário</h3></a></div>';
-		echo '<div class="sub-header"><a class="btn btn-large" href="../SAD/responderQuestionario.php?x='. $contatosEncontrados['login'].'"><h3>Responder Questionário</h3></a></div>';
-		
 		if(!empty($_GET["x"])){
 		echo '<div class="sub-header"><a class="btn btn-large" href="../SAD/mainPage.php"><h3>Voltar</h3></a></div>';
 		}

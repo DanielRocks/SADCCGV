@@ -55,9 +55,9 @@ include_once("../modelos/cabecalho_login.html");
 				<input type="password" class="form-control" id="InputSenhaConf" name="passwd2" placeholder="Confirme a senha">
 			  </div>
 
-			  <button type="submit" class="btn btn-primary">Cadastrar</button>
+			  <button type="submit" class="btn btn-primary center-block">Cadastrar</button>
 			  
-			  <a class="btn btn-large" href="../sad"><h3>Voltar</h3></a>
+			  <a class="btn btn-large center-block" href="../sad"><h3>Voltar</h3></a>
 		 </form>
 
 	 </div>

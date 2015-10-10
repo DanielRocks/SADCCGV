@@ -1,7 +1,10 @@
 <?php
 require_once("./authSession.php");
 require_once("./conf/confBD.php");
-include_once("./modelos/cabecalho_SAD.html");
+if ($_SESSION['gerencia'] < 2){
+include_once("./modelos/cabecalho_SAD.html");}
+else
+{include_once("./modelos/cabecalho_SAD_Gerencia.html");}
 ?>
 
     <div class="container">

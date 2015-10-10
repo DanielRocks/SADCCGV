@@ -7,7 +7,7 @@ include_once("./modelos/cabecalho_SAD.html");
     <div class="container">
 
       <div class="starter-template">
-        <h3 class="sub-header">Perfil</h3>    
+        <h2 class="sub-header">Cadastro de Questionário</h2>    
       </div>
 
 <?php	  
@@ -19,23 +19,13 @@ try
 				
 		// instrução SQL básica (sem restrição de nome)
 		$SQLSelect = 'SELECT * FROM funcionarios';
-	
-	   if(!empty($_GET["x"])){
-	         $Busca = $_GET["x"];
-			 $SQLSelect .= ' WHERE login = ?';
-		}
 			
 		//prepara a execução da sentença
 		$operacao = $conexao->prepare($SQLSelect);
 
-		if(!empty($_GET["x"])){
-			$operacao->execute(array($Busca));
-			$resultados = $operacao->fetchAll();
-		}
-		else{
-			$operacao->execute();
-			$resultados = $operacao->fetchAll();
-		}
+		$operacao->execute();
+		$resultados = $operacao->fetchAll();
+		
 		//captura TODOS os resultados obtidos
 		
 		
@@ -43,27 +33,74 @@ try
 		$conexao = null;
 		
 		// se há resultados, os escreve em uma tabela
-		if(!empty($_GET["x"])){
-			foreach($resultados as $contatosEncontrados){		//para cada elemento do vetor de resultados...
-				
-				echo '<div class="row-fluid panel-body">';
-				echo '<div class="col-md-1"><strong>'. utf8_decode($contatosEncontrados['nomeCompleto']) .'</strong></div>';
-				echo '<div class="col-md-3"><img height="320" width="240" class="img-rounded" src="fotos/'. utf8_decode($contatosEncontrados['arquivoFoto']) .'"></img></div>';
-				echo '<div class="col-md-2"><strong>E-Mail:</strong><br> '. utf8_decode($contatosEncontrados['email']) .'</div>';
-				echo '<div class="col-md-2"><strong>Departamento:</strong><br>'. utf8_decode($contatosEncontrados['departamento']) .'</div>';
-				echo '<div class="col-md-4"><strong>Responsável:</strong><br>'. utf8_decode($contatosEncontrados['responsavel']) .'</div>';
-				echo '</div>';
-				
-				
-			}
-		}
 		
-		echo "<button class='btn btn-lg btn-primary btn-block' type='button' onclick='javascript:window.location.href='./cadastroQuestionario.php?x='$Busca'>Cadastrar questionário</button>";
-		echo "<button class='btn btn-lg btn-success btn-block' type='button' onclick='javascript:window.location.href='./responderQuestionario.php?x='$Busca'>Responder questionário</button>";
+		$numeroPergunta = 1;
 		
-		if(!empty($_GET["x"])){
-		echo '<div class="sub-header"><a class="btn btn-large" href="../SAD/mainPage.php"><h3>Voltar</h3></a></div>';
-		}
+		echo '<form role="form" method="post" enctype="multipart/form-data" action="./cadastroNovoUsuario.php" class="form-signin">';
+		echo '<div class="panel-default panel">';
+			echo '<div class="panel-heading">';	
+				echo '<h2 class="sub-header">Escolha quem avaliar</h2>';
+		
+				foreach($resultados as $contatosEncontrados)
+				{
+					echo '<div class="row-fluid panel-body">';
+					echo '<input type="checkbox" name="funcionarios" value="'.$contatosEncontrados['login'].'"> <img height="80" width="60" class="img-rounded" src="fotos/'. utf8_decode($contatosEncontrados['arquivoFoto']) .'"></img> <strong>'.$contatosEncontrados['nomeCompleto'].'</strong> <br>';
+					echo '</div>';
+				}
+			echo '</div>';
+
+			echo '<div class="row-fluid panel-body">';
+				
+				echo '<h3 class="sub-header">Pergunta '.$numeroPergunta.'</h3>';
+				
+			echo '</div>';
+			
+			echo '<div class="row-fluid panel-body">';
+			
+				echo '<input type="text" class="form-control" id="Pergunta['.$numeroPergunta.']" name="pergunta['.$numeroPergunta.']" placeholder="Escreva sua pergunta" required>';
+			
+			echo '</div>';
+			
+			echo '<div class="row-fluid panel-body">';
+				
+				echo '<h4 class="sub-header">Opção 1: </h4>';
+				echo '<input type="text" class="form-control" id="opcao1" name="opcao1" placeholder="Opção 1" required>';
+				
+			echo '</div>';
+			
+			echo '<div class="row-fluid panel-body">';
+				
+				echo '<h4 class="sub-header">Opção 2: </h4>';
+				echo '<input type="text" class="form-control" id="opcao2" name="opcao2" placeholder="Opção 2" required>';
+				
+			echo '</div>';
+			
+			echo '<div class="row-fluid panel-body">';
+				
+				echo '<h4 class="sub-header">Opção 3: </h4>';
+				echo '<input type="text" class="form-control" id="opcao3" name="opcao3" placeholder="Opção 3">';
+				
+			echo '</div>';
+			
+			echo '<div class="row-fluid panel-body">';
+				
+				echo '<h4 class="sub-header">Opção 4: </h4>';
+				echo '<input type="text" class="form-control" id="opcao4" name="opcao4" placeholder="Opção 4">';
+				
+			echo '</div>';
+			
+			echo '<div class="row-fluid panel-body">';
+				
+				echo '<h4 class="sub-header">Opção 5: </h4>';
+				echo '<input type="text" class="form-control" id="opcao5" name="opcao5" placeholder="Opção 5">';
+				
+			echo '</div>';
+		
+		
+		echo '<button type="submit" class="btn btn-primary center-block">Cadastrar</button>';
+		echo '</form>';
+		
+		
 }	
 		catch (PDOException $e)
 		{
@@ -75,6 +112,8 @@ try
 ?>
 
     </div><!-- /.container -->
+	
+	<div class="sub-header"><a class="btn btn-large" href="../SAD/mainPage.php"><h3>Voltar</h3></a></div>
 
 <?php
 include_once("./modelos/rodape_html.html");
