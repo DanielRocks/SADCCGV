@@ -11,7 +11,7 @@ else
     <div class="container">
 
       <div class="starter-template">
-        <h2 class="sub-header">Questionários</h2>    
+        <h2 class="sub-header">Avaliações</h2>    
       </div>
 
 <?php	  
@@ -19,23 +19,22 @@ try
 {
 	// instancia objeto PDO, conectando no mysql
 	
-	if(!empty($_POST['titulo'])){
+	if(!empty($_POST['nomeAvaliacao'])){
 		
-		$titulo = utf8_encode(htmlspecialchars($_POST['titulo']));
-		$gerencia = utf8_encode(htmlspecialchars($_POST['gerencia']));
+		$nomeAvaliacao = utf8_encode(htmlspecialchars($_POST['nomeAvaliacao']));
 			
 			$conexao3 = conn_mysql();
 	        
 			
 			
-			$SQLInsert = 'INSERT INTO questionario (titulo, gerencia)
-			  		  VALUES (?,?)';
+			$SQLInsert = 'INSERT INTO avaliacao (nomeAvaliacao)
+			  		  VALUES (?)';
 					  
 			//prepara a execução
-			$operacao3 = $conexao3->prepare($SQLInsert);					  
+			$operacao3 = $conexao->prepare($SQLInsert);					  
 		
 			//executa a sentença SQL com os parâmetros passados por um vetor
-			$inserir = $operacao3->execute(array($titulo, $gerencia));
+			$inserir = $operacao->execute(array($nomeAvaliacao));
 		
 			// fecha a conexão ao banco
 			$conexao3 = null;
@@ -45,7 +44,7 @@ try
 		
 				
 		// instrução SQL básica (sem restrição de nome)
-		$SQLSelect = 'SELECT * FROM questionario';
+		$SQLSelect = 'SELECT * FROM avaliacao';
 			
 		//prepara a execução da sentença
 		$operacao = $conexao->prepare($SQLSelect);
@@ -60,26 +59,46 @@ try
 		$conexao = null;
 		
 		
+		
+	$conexao2 = conn_mysql();
+		
+		$SQLSelect2 = 'SELECT * FROM funcionarios WHERE gerencia < 2';
+			
+		//prepara a execução da sentença
+		$operacao2 = $conexao2->prepare($SQLSelect2);
+
+		$operacao2->execute();
+		$resultados2 = $operacao2->fetchAll();
+		
+		//captura TODOS os resultados obtidos
+		
+		
+		// fecha a conexão (os resultados já estão capturados)
+		$conexao2 = null;
+		
+		
+		
+		
 		// se há resultados, os escreve em uma tabela
 		
-		$numeroQuestionario = 1;
+		$numeroAvaliacao = 1;
 		
-		echo '<form role="form" method="post" action="./cadastroQuestionario.php">';
+		echo '<form role="form" method="post" action="./cadastroAvaliacao.php">';
 		echo '<div class="panel-default panel">';
 			echo '<div class="panel-heading">';	
-				echo '<h2 class="sub-header">Escolha um questionário</h2>';
+				echo '<h2 class="sub-header">Escolha uma avaliação</h2>';
 			echo '</div>';
 		
-				foreach($resultados as $questionariosEncontrados)
+				foreach($resultados as $avaliacoesEncontradas)
 				{
 					echo '<div class="row-fluid panel-body">';
 						echo '<div class="col-md-8">';
-							echo '<strong>' .$numeroQuestionario. ': ' .utf8_decode($questionariosEncontrados['titulo']). '</strong>';
+							echo '<strong>' .$numeroAvaliacao. ': ' .utf8_decode($avaliacoesEncontradas['nomeAvaliacao']). '</strong>';
 						echo '</div>';
-						$numeroQuestionario++;
+						$numeroAvaliacao++;
 						echo '<div class="col-md-4">';
-							echo '<a href="cadastroPergunta.php?x='.$questionariosEncontrados['IDquestionario'].'">';
-								echo '<strong>Modificar Questionário</strong>';
+							echo '<a href="avaliacoes.php?x='.$avaliacoesEncontradas['IDavaliacao'].'">';
+								echo '<strong>Modificar Avaliação</strong>';
 							echo '</a>';
 						echo '</div>';
 					echo '</div>';
@@ -89,18 +108,11 @@ try
 		
 		echo '<div class="panel-default panel">';
 			echo '<div class="panel-heading">';	
-				echo '<h2 class="sub-header">Novo questionário</h2>';
+				echo '<h2 class="sub-header">Nova avaliação</h2>';
 				echo '<div class="row-fluid panel-body">';
-					echo '<input type="text" class="form-control" id="titulo" name="titulo" placeholder="Título" required>';
+					echo '<input type="text" class="form-control" id="nomeAvaliacao" name="nomeAvaliacao" placeholder="Título" required>';
 				echo '</div>';
 			echo '</div>';
-			
-		echo '<div class="row-fluid panel-body">';
-			echo '<select class="form-control" id="gerencia" name="gerencia" required>';
-				echo '<option value = 1>Todos podem responder</option>';
-				echo '<option value = 2>Apenas gerentes podem responder</option>';
-			echo '</select>';
-		echo '</div>';
 			
 		echo '</div>';//<div class="panel-default panel">
 		

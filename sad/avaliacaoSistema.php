@@ -1,7 +1,10 @@
 <?php
 require_once("./authSession.php");
 require_once("./conf/confBD.php");
-include_once("./modelos/cabecalho_SAD.html");
+if ($_SESSION['gerencia'] < 2){
+include_once("./modelos/cabecalho_SAD.html");}
+else
+{include_once("./modelos/cabecalho_SAD_Gerencia.html");}
 ?>
 
     <div class="container">
@@ -14,14 +17,10 @@ include_once("./modelos/cabecalho_SAD.html");
 try{
 	// instancia objeto PDO, conectando no mysql
 	$conexao = conn_mysql();
-		
+	$nomeBusca = utf8_decode($_SESSION['login']);
 				
 		// instrução SQL básica (sem restrição de nome)
-		$SQLSelect = 'SELECT * FROM funcionarios';
-	
-	         $nomeBusca = utf8_decode($_SESSION['nomeCompleto']);
-			 $nomeBusca = "%".$nomeBusca."%";
-			 $SQLSelect .= ' WHERE nomeCompleto like ?';
+		$SQLSelect = 'SELECT * FROM funcionarios WHERE login =?';
 			
 		//prepara a execução da sentença
 		$operacao = $conexao->prepare($SQLSelect);

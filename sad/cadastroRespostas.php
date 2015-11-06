@@ -11,39 +11,45 @@ try
 	// se não foram passados 4 parâmetros na requisição e não vier da página de cadastro
 	//desvia para a mensagem de erro: 	// "previne" acesso direto à página
 	$origem = basename($_SERVER['HTTP_REFERER']);
-	if((count($_POST)!=1)&&($origem!='avaliacaoSistema.php')){
+	if(count($_POST)!=1){
 		header("Location:./acessoNegado.php");
 		die();
 	}
 	//se existem os parâmetros...
 	else{
-		//instancia objeto PDO, conectando-se ao mysql
-		$conexao = conn_mysql();
 		
-		//captura valores do vetor POST
-		//utf8_encode para manter consistência da codificação utf8 nas páginas e no banco
-		$opiniao = utf8_encode(htmlspecialchars($_POST['opiniao']));
-		$nomeCompleto = utf8_decode($_SESSION['nomeCompleto']);
+		//$IDquestionario = $_GET["x"];
+	
+		if(!empty($_POST["OP"])){
 		
+			$conexao = conn_mysql();
 		
-		
-		// cria instrução SQL parametrizada
-		$SQLUpdate = 'UPDATE funcionarios SET opiniao=? WHERE nomeCompleto=?';
+			//captura valores do vetor POST
+			//utf8_encode para manter consistência da codificação utf8 nas páginas e no banco
+			$OP = $_POST["OP"];
+			$login = utf8_decode($_SESSION['login']);
+
+			
+			$SQLInsert = 'INSERT INTO escolha (IDpergunta, login, resposta)
+			  		  VALUES (?,?,?)';
 					  
-		//prepara a execução
-		$operacao = $conexao->prepare($SQLUpdate);					  
+			//prepara a execução
+			$operacao = $conexao->prepare($SQLInsert);					  
 		
-		//executa a sentença SQL com os parâmetros passados por um vetor
-		$atualizacao = $operacao->execute(array($opiniao, $nomeCompleto));
+			foreach($OP as $Opcao){
+				$OP_explode=explode(",",$Opcao);
+				$IDperg = $OP_explode[0];
+				$escolha = $OP_explode[1];
+				
+				//executa a sentença SQL com os parâmetros passados por um vetor
+				$inserir = $operacao->execute(array($IDperg, $_SESSION['login'], $escolha));
+			}
+			// fecha a conexão ao banco
+			$conexao = null;
 		
-		// fecha a conexão ao banco
-		$conexao = null;
-		
-		//verifica se o retorno da execução foi verdadeiro ou falso,
-		//imprimindo mensagens ao cliente
-		if ($atualizacao){
+		if ($inserir){
 			 echo'<div class="starter-template">';
-			 echo"\n<h3 class=\sub-header\>Avaliação do sistema enviada com sucesso!</h3>";
+			 echo"\n<h3 class=\sub-header\>Respostas enviadas com sucesso!</h3>";
 			 echo "<p class=\"lead\"><a href=\"./mainPage.php\">Página principal</a></p>\n";
 			 echo'</div>';			 
 		}
@@ -52,9 +58,13 @@ try
 				$arr = $operacao->errorInfo();		//mensagem de erro retornada pelo SGBD
 				$erro = utf8_decode($arr[2]);
 				echo "<p>$erro</p>";							//deve ser melhor tratado em um caso real
-			    echo "<p><a href=\"./cadastroUsuario.php\">Retornar</a></p>\n";
+			    echo "<p><a href=\"./mainPage.php\">Retornar</a></p>\n";
 		}
-    }
+		
+	}
+		
+		
+    } //end ELSE
 }
 catch (PDOException $e)
 {

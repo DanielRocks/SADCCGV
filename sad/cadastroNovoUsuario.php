@@ -26,6 +26,7 @@ try
 		$senha = utf8_encode(htmlspecialchars($_POST['passwd']));
 		$senhaConf = utf8_encode(htmlspecialchars($_POST['passwd2']));
 		$departamento = utf8_encode(htmlspecialchars($_POST['departamento']));
+		$departamento = utf8_encode(htmlspecialchars($_POST['responsavel']));
 		
 		if(($senha!=$senhaConf)||(strlen($senha)<4)||(strlen($senha)>8)){
 		header("Location:./erroCadastro.php");
@@ -87,14 +88,14 @@ try
 		
 		
 		// cria instrução SQL parametrizada
-		$SQLInsert = 'INSERT INTO funcionarios (login, nomeCompleto, email, arquivoFoto, departamento, senha)
-			  		  VALUES (?,?,?,?,?,MD5(?))';
+		$SQLInsert = 'INSERT INTO funcionarios (login, nomeCompleto, email, arquivoFoto, departamento, responsavel, senha)
+			  		  VALUES (?,?,?,?,?,?,MD5(?))';
 					  
 		//prepara a execução
 		$operacao = $conexao->prepare($SQLInsert);					  
 		
 		//executa a sentença SQL com os parâmetros passados por um vetor
-		$inserir = $operacao->execute(array($login, $nome, $email, $nome_imagem, $departamento, $senha));
+		$inserir = $operacao->execute(array($login, $nome, $email, $nome_imagem, $departamento, $responsavel, $senha));
 		
 		// fecha a conexão ao banco
 		$conexao = null;

@@ -1,7 +1,10 @@
 <?php
 require_once("./authSession.php");  
 require_once("./conf/confBD.php");
-include_once("./modelos/cabecalho_SAD.html");
+if ($_SESSION['gerencia'] < 2){
+include_once("./modelos/cabecalho_SAD.html");}
+else
+{include_once("./modelos/cabecalho_SAD_Gerencia.html");}
 ?>
 
     <div class="container">
@@ -40,6 +43,12 @@ try
 		
 		
 		// fecha a conexão (os resultados já estão capturados)
+		
+		
+		
+		
+		
+		
 		$conexao = null;
 		
 		// se há resultados, os escreve em uma tabela
@@ -51,7 +60,20 @@ try
 				echo '<div class="col-md-3"><img height="320" width="240" class="img-rounded" src="fotos/'. utf8_decode($contatosEncontrados['arquivoFoto']) .'"></img></div>';
 				echo '<div class="col-md-2"><strong>E-Mail:</strong><br> '. utf8_decode($contatosEncontrados['email']) .'</div>';
 				echo '<div class="col-md-2"><strong>Departamento:</strong><br>'. utf8_decode($contatosEncontrados['departamento']) .'</div>';
-				echo '<div class="col-md-4"><strong>Responsável:</strong><br>'. utf8_decode($contatosEncontrados['responsavel']) .'</div>';
+				
+				$conexao = conn_mysql();
+				
+				$SQLResponsavel = 'SELECT nomeCompleto FROM funcionarios where IDfuncionario = ?';
+				$operacao = $conexao->prepare($SQLResponsavel);
+				$operacao->execute(array($contatosEncontrados['responsavel']));
+				$resResponsavel = $operacao->fetchAll();
+				$conexao = null;
+				
+				foreach($resResponsavel as $responsavelEncontrado){
+					echo '<div class="col-md-4"><strong>Responsável:</strong><br>'. utf8_decode($responsavelEncontrado['nomeCompleto']) .'</div>';
+				}
+				
+				
 				echo '</div>';
 				
 				

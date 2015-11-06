@@ -53,6 +53,7 @@ session_start();
 		   $_SESSION['auth']=true;
 		   $_SESSION['nomeCompleto'] = $resultados[0]['nomeCompleto'];
 		   $_SESSION['gerencia'] = $resultados[0]['gerencia'];
+		   $_SESSION['ID'] = $resultados[0]['IDfuncionario'];
 		   $_SESSION['login'] = $log;
 		   header("Location: ./mainPage.php");
 		   die();
