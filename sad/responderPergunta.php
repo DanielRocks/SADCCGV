@@ -7,34 +7,10 @@ else
 {include_once("./modelos/cabecalho_SAD_Gerencia.html");}
 ?>
 
-    <div class="container">
-
-      <div class="starter-template">
-        <h2 class="sub-header"></h2>    
-      </div>
-
 <?php	  
 try
 {	
 	$IDquestionario = $_GET["x"];
-	
-	if(!empty($_POST["OP"])){
-		
-		$OP = $_POST["OP"];
-		
-		foreach($OP as $Opcao){
-			
-			$OP_explode=explode(",",$Opcao);
-			$IDperg = $OP_explode[0];
-			$escolha = $OP_explode[1];
-			
-			echo 'Pergunta ID : ' .$IDperg. ' Resposta ' .$escolha. '';
-			
-		}
-		
-		
-		
-	}
 	
 	$conexao = conn_mysql();
 		
@@ -48,6 +24,13 @@ try
 		$operacao->execute(array($IDquestionario));
 		$resultados = $operacao->fetchAll();
 		
+		$SQLSelect = 'SELECT titulo FROM questionario WHERE IDquestionario = ?';
+		
+		$operacao = $conexao->prepare($SQLSelect);
+
+		$operacao->execute(array($IDquestionario));
+		$resultados2 = $operacao->fetchAll();
+		
 		//captura TODOS os resultados obtidos
 		
 		
@@ -58,13 +41,22 @@ try
 		
 		$numeroPergunta = 1;
 		
+		echo '<div class="container">';
+
+		echo '<div class="starter-template">';
+			echo '<h2 class="sub-header">';
+				foreach ($resultados2 as $titulos)
+				{echo utf8_decode($titulos['titulo']);}
+			echo '</h2>';   
+		echo '</div>';
+		
 		echo '<form role="form" method="post" action="./cadastroRespostas.php">';
 		echo '<div class="panel-default panel">';
 			
 			
 			foreach($resultados as $perguntasEncontradas)
 			{
-			echo '<div class="row-fluid panel-body">';
+			echo '<div class="panel-heading">';
 				
 				echo '<h3 class="sub-header">Pergunta '.$numeroPergunta.': </h3>';
 				

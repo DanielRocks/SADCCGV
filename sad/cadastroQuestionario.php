@@ -73,13 +73,28 @@ try
 				foreach($resultados as $questionariosEncontrados)
 				{
 					echo '<div class="row-fluid panel-body">';
-						echo '<div class="col-md-8">';
+						echo '<div class="col-md-4">';
 							echo '<strong>' .$numeroQuestionario. ': ' .utf8_decode($questionariosEncontrados['titulo']). '</strong>';
 						echo '</div>';
 						$numeroQuestionario++;
-						echo '<div class="col-md-4">';
+						echo '<div class="col-md-2">';
 							echo '<a href="cadastroPergunta.php?x='.$questionariosEncontrados['IDquestionario'].'">';
-								echo '<strong>Modificar Questionário</strong>';
+								echo '<strong>Inserir Perguntas</strong>';
+							echo '</a>';
+						echo '</div>';
+						echo '<div class="col-md-2">';
+							echo '<a href="edicaoPergunta.php?x='.$questionariosEncontrados['IDquestionario'].'">';
+								echo '<strong>Modificar Perguntas</strong>';
+							echo '</a>';
+						echo '</div>';
+						echo '<div class="col-md-2">';
+							echo '<a href="verRespostas.php?x='.$questionariosEncontrados['IDquestionario'].'">';
+								echo '<strong>Resultados</strong>';
+							echo '</a>';
+						echo '</div>';
+						echo '<div class="col-md-2">';
+							echo '<a href="verParticipantes.php?x='.$questionariosEncontrados['IDquestionario'].'">';
+								echo '<strong>Participantes</strong>';
 							echo '</a>';
 						echo '</div>';
 					echo '</div>';

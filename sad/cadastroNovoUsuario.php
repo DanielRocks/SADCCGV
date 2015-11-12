@@ -26,7 +26,7 @@ try
 		$senha = utf8_encode(htmlspecialchars($_POST['passwd']));
 		$senhaConf = utf8_encode(htmlspecialchars($_POST['passwd2']));
 		$departamento = utf8_encode(htmlspecialchars($_POST['departamento']));
-		$departamento = utf8_encode(htmlspecialchars($_POST['responsavel']));
+		$responsavel = utf8_encode(htmlspecialchars($_POST['responsavel']));
 		
 		if(($senha!=$senhaConf)||(strlen($senha)<4)||(strlen($senha)>8)){
 		header("Location:./erroCadastro.php");

@@ -11,7 +11,7 @@ else
     <div class="container">
 
       <div class="starter-template">
-        <h2 class="sub-header">Avaliações</h2>    
+        <h2 class="sub-header">Departamentos</h2>    
       </div>
 
 <?php	  
@@ -19,22 +19,22 @@ try
 {
 	// instancia objeto PDO, conectando no mysql
 	
-	if(!empty($_POST['nomeAvaliacao'])){
+	if(!empty($_POST['nomeDepartamento'])){
 		
-		$nomeAvaliacao = utf8_encode(htmlspecialchars($_POST['nomeAvaliacao']));
+		$nomeDepartamento = utf8_encode(htmlspecialchars($_POST['nomeDepartamento']));
 			
 			$conexao3 = conn_mysql();
 	        
 			
 			
-			$SQLInsert = 'INSERT INTO avaliacao (nomeAvaliacao)
+			$SQLInsert = 'INSERT INTO departamento (nomeDepartamento)
 			  		  VALUES (?)';
 					  
 			//prepara a execução
 			$operacao3 = $conexao3->prepare($SQLInsert);					  
 		
 			//executa a sentença SQL com os parâmetros passados por um vetor
-			$inserir = $operacao3->execute(array($nomeAvaliacao));
+			$inserir = $operacao3->execute(array($nomeDepartamento));
 		
 			// fecha a conexão ao banco
 			$conexao3 = null;
@@ -44,7 +44,7 @@ try
 		
 				
 		// instrução SQL básica (sem restrição de nome)
-		$SQLSelect = 'SELECT * FROM avaliacao';
+		$SQLSelect = 'SELECT * FROM departamento ORDER BY nomeDepartamento';
 			
 		//prepara a execução da sentença
 		$operacao = $conexao->prepare($SQLSelect);
@@ -60,47 +60,25 @@ try
 		
 		
 		
-	$conexao2 = conn_mysql();
-		
-		$SQLSelect2 = 'SELECT * FROM funcionarios WHERE gerencia < 2';
-			
-		//prepara a execução da sentença
-		$operacao2 = $conexao2->prepare($SQLSelect2);
-
-		$operacao2->execute();
-		$resultados2 = $operacao2->fetchAll();
-		
-		//captura TODOS os resultados obtidos
-		
-		
-		// fecha a conexão (os resultados já estão capturados)
-		$conexao2 = null;
-		
-		
-		
 		
 		// se há resultados, os escreve em uma tabela
 		
-		$numeroAvaliacao = 1;
+		$numeroDepartamento = 1;
 		
-		echo '<form role="form" method="post" action="./cadastroAvaliacao.php">';
+		echo '<form role="form" method="post" action="./cadastroDepartamento.php">';
 		echo '<div class="panel-default panel">';
 			echo '<div class="panel-heading">';	
-				echo '<h2 class="sub-header">Escolha uma avaliação</h2>';
+				//echo '<h2 class="sub-header">Departamentos</h2>';
 			echo '</div>';
 		
-				foreach($resultados as $avaliacoesEncontradas)
+				foreach($resultados as $departamentosEncontradas)
 				{
 					echo '<div class="row-fluid panel-body">';
-						echo '<div class="col-md-8">';
-							echo '<strong>' .$numeroAvaliacao. ': ' .utf8_decode($avaliacoesEncontradas['nomeAvaliacao']). '</strong>';
+						echo '<div class="col-md-12">';
+							echo '<strong>' .$numeroDepartamento. ': ' .utf8_decode($departamentosEncontradas['nomeDepartamento']). '</strong>';
 						echo '</div>';
-						$numeroAvaliacao++;
-						echo '<div class="col-md-4">';
-							echo '<a href="avaliacoes.php?x='.$avaliacoesEncontradas['IDavaliacao'].'">';
-								echo '<strong>Modificar Avaliação</strong>';
-							echo '</a>';
-						echo '</div>';
+						$numeroDepartamento++;
+						
 					echo '</div>';
 				}
 		
@@ -108,9 +86,9 @@ try
 		
 		echo '<div class="panel-default panel">';
 			echo '<div class="panel-heading">';	
-				echo '<h2 class="sub-header">Nova avaliação</h2>';
+				echo '<h2 class="sub-header">Novo departamento</h2>';
 				echo '<div class="row-fluid panel-body">';
-					echo '<input type="text" class="form-control" id="nomeAvaliacao" name="nomeAvaliacao" placeholder="Título" required>';
+					echo '<input type="text" class="form-control" id="nomeDepartamento" name="nomeDepartamento" placeholder="Nome" required>';
 				echo '</div>';
 			echo '</div>';
 			

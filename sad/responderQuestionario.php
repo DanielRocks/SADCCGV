@@ -51,12 +51,12 @@ try
 				{
 							$conexao2 = conn_mysql();
 							// instrução SQL básica (sem restrição de nome)
-							$SQLSelect2 = 'SELECT * FROM `escolha` e INNER JOIN `pergunta` p ON e.IDpergunta = p.IDpergunta INNER JOIN `questionario` q ON p.IDquestionario = q.IDquestionario WHERE q.IDquestionario = ? AND e.login = ?';
+							$SQLSelect2 = 'SELECT * FROM `escolha` e INNER JOIN `pergunta` p ON e.IDpergunta = p.IDpergunta INNER JOIN `questionario` q ON p.IDquestionario = q.IDquestionario WHERE q.IDquestionario = ? AND e.IDfuncionario = ?';
 								
 							//prepara a execução da sentença
 							$operacao2 = $conexao2->prepare($SQLSelect2);
 
-							$operacao2->execute(array($questionariosEncontrados['IDquestionario'], $_SESSION['login']));
+							$operacao2->execute(array($questionariosEncontrados['IDquestionario'], $_SESSION['ID']));
 							$resultados2 = $operacao2->fetchAll();
 							
 							//captura TODOS os resultados obtidos
@@ -71,7 +71,7 @@ try
 									echo '<div class="row-fluid panel-body">';
 
 										echo '<div class="col-md-12">';
-											echo '<strong>' .$numeroQuestionario. ': ' .utf8_decode($questionariosEncontrados['titulo']). '</strong>';
+											echo '<strong>' .$numeroQuestionario. ': ' .utf8_decode($questionariosEncontrados['titulo']). ' - Respondido</strong>';
 										echo '</div>';
 										$numeroQuestionario++;
 									echo '</div>';
@@ -79,14 +79,31 @@ try
 								
 								else
 								{
-									echo '<div class="row-fluid panel-body">';
-									echo '<a href="responderPergunta.php?x='.$questionariosEncontrados['IDquestionario'].'">';
-									echo '<div class="col-md-12">';
-										echo '<strong>' .$numeroQuestionario. ': ' .utf8_decode($questionariosEncontrados['titulo']). '</strong>';
-									echo '</div>';
-									$numeroQuestionario++;
-										echo '</a>';
-								echo '</div>';
+									if ($_SESSION['gerencia'] > 1)
+									{
+										echo '<div class="row-fluid panel-body">';
+											echo '<a href="responderPergunta.php?x='.$questionariosEncontrados['IDquestionario'].'">';
+												echo '<div class="col-md-12">';
+													echo '<strong>' .$numeroQuestionario. ': ' .utf8_decode($questionariosEncontrados['titulo']). '</strong>';
+												echo '</div>';
+												$numeroQuestionario++;
+											echo '</a>';
+										echo '</div>';
+									}
+									else
+									{
+										if($questionariosEncontrados['gerencia'] < 2)
+										{
+											echo '<div class="row-fluid panel-body">';
+											echo '<a href="responderPergunta.php?x='.$questionariosEncontrados['IDquestionario'].'">';
+												echo '<div class="col-md-12">';
+													echo '<strong>' .$numeroQuestionario. ': ' .utf8_decode($questionariosEncontrados['titulo']). '</strong>';
+												echo '</div>';
+												$numeroQuestionario++;
+											echo '</a>';
+										echo '</div>';
+										}
+									}
 								}
 							
 

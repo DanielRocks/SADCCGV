@@ -1,6 +1,5 @@
 <?php
-session_start();
-if(($_SESSION['gerencia'] < 2)){
+if(($_SESSION['gerencia'] < 1)){
   header("Location:./acessoImpedido.php");
   die();
   }

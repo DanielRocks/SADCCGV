@@ -1,11 +1,11 @@
 <?php
  function conn_mysql(){
 
-    $host = "mysql.sadccgv.kinghost.net";
-    $user = "sadccgv";
-    $pwd = "SAD2015";
-    $db = "sadccgv";
-	$porta = 3306;
+    $host = "localhost";
+    $user = "root";
+    $pwd = "";
+    $db = "sad2";
+	$porta = 1433;
     // Connect to database.
 
 	      $conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);

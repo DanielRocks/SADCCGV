@@ -27,10 +27,10 @@ try
 			//captura valores do vetor POST
 			//utf8_encode para manter consistência da codificação utf8 nas páginas e no banco
 			$OP = $_POST["OP"];
-			$login = utf8_decode($_SESSION['login']);
+			$IDfuncionario = utf8_decode($_SESSION['ID']);
 
 			
-			$SQLInsert = 'INSERT INTO escolha (IDpergunta, login, resposta)
+			$SQLInsert = 'INSERT INTO escolha (IDpergunta, IDfuncionario, resposta)
 			  		  VALUES (?,?,?)';
 					  
 			//prepara a execução
@@ -42,7 +42,7 @@ try
 				$escolha = $OP_explode[1];
 				
 				//executa a sentença SQL com os parâmetros passados por um vetor
-				$inserir = $operacao->execute(array($IDperg, $_SESSION['login'], $escolha));
+				$inserir = $operacao->execute(array($IDperg, $IDfuncionario, $escolha));
 			}
 			// fecha a conexão ao banco
 			$conexao = null;

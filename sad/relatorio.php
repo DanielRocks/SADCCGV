@@ -15,21 +15,20 @@ else
 	  
 <?php
 try{
+	
+	$IDFuncionario = $_GET["x"];
+	
 	// instancia objeto PDO, conectando no mysql
 	$conexao = conn_mysql();
 		
 				
 		// instrução SQL básica (sem restrição de nome)
-		$SQLSelect = 'SELECT * FROM funcionarios';
-	
-	         $nomeBusca = utf8_decode($_SESSION['login']);
-			 $nomeBusca = "%".$nomeBusca."%";
-			 $SQLSelect .= ' WHERE login LIKE ?';
+		$SQLSelect = 'SELECT * FROM funcionarios WHERE IDfuncionario = ?';
 			
 		//prepara a execução da sentença
 		$operacao = $conexao->prepare($SQLSelect);
 		
-		$pesquisar = $operacao->execute(array($nomeBusca));
+		$pesquisar = $operacao->execute(array($IDFuncionario));
 		
 		$operacao->execute();
 
@@ -42,12 +41,12 @@ try{
 		
 		$conexao2 = conn_mysql();
 		
-		$SQLSelect2 = 'SELECT * FROM funcionarios f INNER JOIN avafunc a ON f.IDfuncionario = a.IDfuncionario WHERE f.login = ?';
+		$SQLSelect2 = 'SELECT * FROM funcionarios f INNER JOIN avafunc a ON f.IDfuncionario = a.IDfuncionario WHERE f.IDFuncionario = ?';
 			
 		//prepara a execução da sentença
 		$operacao2 = $conexao2->prepare($SQLSelect2);
 
-		$operacao2->execute(array(utf8_decode($_SESSION['login'])));
+		$operacao2->execute(array(utf8_decode($IDFuncionario)));
 		$resultados2 = $operacao2->fetchAll();
 		
 		//captura TODOS os resultados obtidos
@@ -81,7 +80,11 @@ try{
 		if (count($SQLSelect)>0){		
 			echo '<div class="panel-default panel">';
 			echo '<div class="panel-heading">';	
-			echo '<h2 class="sub-header">Meus relatórios</h3>';
+			foreach ($resultados as $funcionariosEncontrados)
+			{
+				echo '<h2 class="sub-header">Relatórios de ' .$funcionariosEncontrados['nomeCompleto']. '</h3>';
+			}
+
 			echo '</div>';
 			foreach($resultados2 as $contatosEncontrados){		//para cada elemento do vetor de resultados...
 				

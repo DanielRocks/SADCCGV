@@ -30,23 +30,51 @@ require_once("./conf/confBD.php");
 			  <div>
 				<label for "InputDepartamento">Departamento:</label>
 				<select name="departamento" id="departamento" class="form-control">
-					<option value="Gerência">Gerência</option>
-					<option value="Recepção">Recepção</option>
-					<option value="Faxina">Faxina</option>
-					<option value="Dep. Financeiro">Dep. Financeiro</option>
-					<option value="Dep. Pessoal">Dep. Pessoal</option>
-					<option value="Dep. Fiscal">Dep. Fiscal</option>
-					<option value="Dep. Contábil">Dep. Contábil</option>
-					<option value="Arquivo">Arquivo</option>
-					<option value="Administrativo">Administrativo</option>
-					<option value="Office-Boy">Office-Boy</option>
+					<?php
+					
+					try{
+					// instancia objeto PDO, conectando no mysql
+					$conexao = conn_mysql();
+		
+				
+						// instrução SQL básica (sem restrição de nome)
+						$SQLSelect = 'SELECT * FROM departamento ORDER BY nomeDepartamento';
+	
+			
+						//prepara a execução da sentença
+						$operacao = $conexao->prepare($SQLSelect);
+						$operacao->execute();
+					
+
+					//captura TODOS os resultados obtidos
+					$resultados = $operacao->fetchAll();
+		
+					// fecha a conexão (os resultados já estão capturados)
+					$conexao = null;
+					
+					echo '';
+					echo '';
+						foreach($resultados as $contatosEncontrados)
+						{
+							echo '<option value='.$contatosEncontrados['IDdepartamento'].'>'.utf8_decode($contatosEncontrados['nomeDepartamento']).'</option>';
+						}
+					echo '';
+						
+					} //try
+					catch (PDOException $e)
+					{
+						// caso ocorra uma exceção, exibe na tela
+						echo "Erro!: " . $e->getMessage() . "<br>";
+						die();
+					}
+					?>
 				</select>
 			  </div>
 			  
 			  <div class="form-group">
 			  <label for="InputResponsavel">Responsável</label>
 			  <select name="responsavel" id="responsavel" class="form-control">
-			  <option value=null>---------</option>
+				<option value=null>---------</option>
 				<?php
 				try{
 					// instancia objeto PDO, conectando no mysql

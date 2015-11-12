@@ -10,7 +10,7 @@ else
     <div class="container">
 
       <div class="starter-template">
-        <h2 class="sub-header"></h2>    
+        <h2 class="sub-header">Inserindo perguntas</h2>    
       </div>
 
 <?php	  
@@ -74,7 +74,7 @@ try
 			
 			foreach($resultados as $perguntasEncontradas)
 			{
-			echo '<div class="row-fluid panel-body">';
+			echo '<div class="panel-heading">';
 				
 				echo '<h3 class="sub-header">Pergunta '.$numeroPergunta.': </h3>';
 				

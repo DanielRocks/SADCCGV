@@ -59,17 +59,31 @@ try{
 		if (count($SQLSelect)>0){		
 			echo '<div class="panel-default panel">';
 			echo '<div class="panel-heading">';	
-			echo '<h3>Funcionários</h3>';
+			echo '<h3 class="sub-header">Funcionários</h3>';
 			echo '</div>';
 			foreach($resultados as $contatosEncontrados){		//para cada elemento do vetor de resultados...
 				
 				//em cada 'linha' do vetor de resultados existem elementos com os mesmos nomes dos campos recuperados do SGBD
 				if($contatosEncontrados['gerencia'] < 2)
 				{
-				echo '<a href="perfil.php?x='. $contatosEncontrados['login'] .'"><div class="row-fluid panel-body">';
-				echo '<div class="col-md-4"><strong>'. utf8_decode($contatosEncontrados['nomeCompleto']) .'</strong></div>';
-				echo '<div class="col-md-8"><img height="80" width="60" class="img-rounded" src="fotos/'. utf8_decode($contatosEncontrados['arquivoFoto']) .'"></img></div>';
-				echo '</div></a>';
+					echo '<div class="row-fluid panel-body"><a href="perfil.php?x='. $contatosEncontrados['IDfuncionario'] .'">';
+					echo '<div class="col-md-4"><strong>'. utf8_decode($contatosEncontrados['nomeCompleto']) .'</strong></div>';
+					
+					if($_SESSION['gerencia'] > 0)
+					{					
+						echo '<div class="col-md-4"><img height="80" width="60" class="img-rounded" src="fotos/'. utf8_decode($contatosEncontrados['arquivoFoto']) .'"></img></div>';
+						echo '</a>';
+						echo '<a href="relatorio.php?x='. $contatosEncontrados['IDfuncionario'] .'">';
+						echo '<div class="col-md-4"><strong>Ver Relatórios</strong></div>';
+						echo '</div></a>';
+						
+						
+					}
+					else
+					{
+						echo '<div class="col-md-8"><img height="80" width="60" class="img-rounded" src="fotos/'. utf8_decode($contatosEncontrados['arquivoFoto']) .'"></img></div>';
+						echo '</div></a>';
+					}
 				}
 
 			}

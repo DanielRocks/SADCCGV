@@ -10,7 +10,7 @@ else
     <div class="container">
 
       <div class="starter-template">
-        <h2 class="sub-header"></h2>    
+        <h2 class="sub-header">Resultados</h2>    
       </div>
 
 <?php	  
@@ -73,7 +73,7 @@ try
 			
 			foreach($resultados as $perguntasEncontradas)
 			{
-			echo '<div class="row-fluid panel-body">';
+			echo '<div class="panel-heading">';
 				
 				echo '<h3 class="sub-header">Pergunta '.$numeroPergunta.': </h3>';
 				
@@ -87,7 +87,7 @@ try
 			
 			echo '<div class="row-fluid panel-body">';
 				
-				echo '<h4 class="sub-header">Opção 5: </h4>';
+				echo '<h4 class="sub-header">Resposta mais frequente: ';
 				
 					$conexao2 = conn_mysql();
 					// instrução SQL básica (sem restrição de nome)
@@ -110,25 +110,26 @@ try
 				
 						switch ($contagem['resCount']){
 							case "1":
-								echo '<strong>Resposta mais frequente:' .$perguntasEncontradas['OP1']. '</strong>';
+								echo utf8_decode($perguntasEncontradas['OP1']);
 								break;
 					
 							case "2":
-								echo '<strong>Resposta mais frequente:' .$perguntasEncontradas['OP2']. '</strong>';
+								echo utf8_decode($perguntasEncontradas['OP2']);
 								break;
 					
 							case "3":
-								echo '<strong>Resposta mais frequente:' .$perguntasEncontradas['OP3']. '</strong>';
+								echo utf8_decode($perguntasEncontradas['OP3']);
 								break;
 					
 							case "4":
-								echo '<strong>Resposta mais frequente:' .$perguntasEncontradas['OP4']. '</strong>';
+								echo utf8_decode($perguntasEncontradas['OP4']);
 								break;
 					
 							case "5":
-								echo '<strong>Resposta mais frequente:' .$perguntasEncontradas['OP5']. '</strong>';
+								echo utf8_decode($perguntasEncontradas['OP5']);
 								break;
 						}
+						echo '</h4>';
 					}
 				$numeroPergunta++;
 			echo '</div>';
